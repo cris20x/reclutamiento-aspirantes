@@ -1,0 +1,14 @@
+# archivos compilados
+/build/
+/dist/
+
+# archivos temporales
+*.class
+*.log
+
+# configuraciones locales
+nbproject/private/
+
+# archivos del sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="recursoshumanos" default="default" basedir=".">
+    <import file="nbproject/build-impl.xml"/>
+    <target name="-post-compile">
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${src.resources.dir}"/>
+        </copy>
+    </target>
+</project>

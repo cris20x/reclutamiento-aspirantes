@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.magdesiz.recursoshumanos.controller.LoginController">
+   <children>
+      <GridPane prefHeight="400.0" prefWidth="600.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <TextField fx:id="emailField" layoutX="23.0" layoutY="171.0" />
+                  <PasswordField fx:id="passwordField" layoutX="22.0" layoutY="237.0" />
+                  <Text layoutX="26.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="correo" />
+                  <Text layoutX="29.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="contraseña" />
+                  <Text layoutX="61.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iniciar sesion" wrappingWidth="71.39453125" />
+                  <Button layoutX="53.0" layoutY="275.0" mnemonicParsing="false" onAction="#login" text="iniciar sesion">
+                     <textFill>
+                        <RadialGradient centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color opacity="0.6641221642494202" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill></Button>
+                  <Button layoutX="60.0" layoutY="310.0" mnemonicParsing="false" onAction="#goToRegister" text="registrarse" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
